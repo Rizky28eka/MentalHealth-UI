@@ -1,4 +1,4 @@
-# Slicing E-commerce App 👟
+# Slicing MentalHealth-UI App 
 
 <div align="center">
   <img src="https://i.postimg.cc/DzWt4FVn/Jepretan-Layar-2023-06-11-pukul-21-42-38.png" alt="Screenshot 1" width="250">
