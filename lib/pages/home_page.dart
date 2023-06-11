@@ -28,12 +28,9 @@ class _HomePageState extends State<HomePage> {
               padding: const EdgeInsets.symmetric(horizontal: 25.0),
               child: Column(
                 children: [
-                  //Greetings Row
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      // Hii Ekaa
-                      // ignore: prefer_const_constructors
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -45,36 +42,24 @@ class _HomePageState extends State<HomePage> {
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          SizedBox(
-                            height: 8,
-                          ),
+                          SizedBox(height: 8),
                           Text(
                             '28 Maret 2004',
                             style: TextStyle(color: Colors.blue[200]),
                           ),
                         ],
                       ),
-
-                      //Notification
                       Container(
                         decoration: BoxDecoration(
                           color: Colors.blue[600],
                           borderRadius: BorderRadius.circular(12),
                         ),
                         padding: EdgeInsets.all(12),
-                        child: Icon(
-                          Icons.notifications,
-                          color: Colors.white,
-                        ),
-                      )
+                        child: Icon(Icons.notifications, color: Colors.white),
+                      ),
                     ],
                   ),
-
-                  SizedBox(
-                    height: 25,
-                  ),
-
-                  //Search Bar
+                  SizedBox(height: 25),
                   Container(
                     decoration: BoxDecoration(
                       color: Colors.blue[600],
@@ -83,28 +68,16 @@ class _HomePageState extends State<HomePage> {
                     padding: EdgeInsets.all(12),
                     child: Row(
                       children: [
-                        Icon(
-                          Icons.search,
-                          color: Colors.white,
-                        ),
-                        SizedBox(
-                          width: 5,
-                        ),
+                        Icon(Icons.search, color: Colors.white),
+                        SizedBox(width: 5),
                         Text(
                           'search',
-                          style: TextStyle(
-                            color: Colors.white,
-                          ),
+                          style: TextStyle(color: Colors.white),
                         ),
                       ],
                     ),
                   ),
-
-                  SizedBox(
-                    height: 25,
-                  ),
-
-                  //How Do You Feel?
+                  SizedBox(height: 25),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -116,89 +89,40 @@ class _HomePageState extends State<HomePage> {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      Icon(
-                        Icons.more_horiz,
-                        color: Colors.white,
-                      ),
+                      Icon(Icons.more_horiz, color: Colors.white),
                     ],
                   ),
-                  SizedBox(
-                    height: 25,
-                  ),
-
-                  // 4 Different
+                  SizedBox(height: 25),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      // Bad
                       Column(
                         children: [
-                          EmoticonFace(
-                            emoticonFace: '😩',
-                          ),
-                          SizedBox(
-                            height: 8,
-                          ),
-                          Text(
-                            'Bad',
-                            style: TextStyle(
-                              color: Colors.white,
-                            ),
-                          ),
+                          EmoticonFace(emoticonFace: '😩'),
+                          SizedBox(height: 8),
+                          Text('Bad', style: TextStyle(color: Colors.white)),
                         ],
                       ),
-
-                      // Fine
                       Column(
                         children: [
-                          EmoticonFace(
-                            emoticonFace: '🙂',
-                          ),
-                          SizedBox(
-                            height: 8,
-                          ),
-                          Text(
-                            'Fine',
-                            style: TextStyle(
-                              color: Colors.white,
-                            ),
-                          ),
+                          EmoticonFace(emoticonFace: '🙂'),
+                          SizedBox(height: 8),
+                          Text('Fine', style: TextStyle(color: Colors.white)),
                         ],
                       ),
-
-                      // Well
                       Column(
                         children: [
-                          EmoticonFace(
-                            emoticonFace: '😄',
-                          ),
-                          SizedBox(
-                            height: 8,
-                          ),
-                          Text(
-                            'Well',
-                            style: TextStyle(
-                              color: Colors.white,
-                            ),
-                          ),
+                          EmoticonFace(emoticonFace: '😄'),
+                          SizedBox(height: 8),
+                          Text('Well', style: TextStyle(color: Colors.white)),
                         ],
                       ),
-
-                      // Excellent
                       Column(
                         children: [
-                          EmoticonFace(
-                            emoticonFace: '🥳',
-                          ),
-                          SizedBox(
-                            height: 8,
-                          ),
-                          Text(
-                            'Excellent',
-                            style: TextStyle(
-                              color: Colors.white,
-                            ),
-                          ),
+                          EmoticonFace(emoticonFace: '🥳'),
+                          SizedBox(height: 8),
+                          Text('Excellent',
+                              style: TextStyle(color: Colors.white)),
                         ],
                       ),
                     ],
@@ -206,9 +130,7 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
             ),
-            SizedBox(
-              height: 25,
-            ),
+            SizedBox(height: 25),
             Expanded(
               child: Container(
                 padding: EdgeInsets.all(25),
@@ -216,7 +138,6 @@ class _HomePageState extends State<HomePage> {
                 child: Center(
                   child: Column(
                     children: [
-                      // Exercise Headling
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
@@ -230,11 +151,7 @@ class _HomePageState extends State<HomePage> {
                           Icon(Icons.more_horiz),
                         ],
                       ),
-
-                      SizedBox(
-                        height: 20,
-                      ),
-                      // Lisview of exercises
+                      SizedBox(height: 20),
                       Expanded(
                         child: ListView(
                           children: [
@@ -264,12 +181,12 @@ class _HomePageState extends State<HomePage> {
                             ),
                           ],
                         ),
-                      )
+                      ),
                     ],
                   ),
                 ),
               ),
-            )
+            ),
           ],
         ),
       ),
